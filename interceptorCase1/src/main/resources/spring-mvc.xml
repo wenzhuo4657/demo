@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!--
+  SpringMVC只扫描controller包即可
+-->
+    <context:component-scan base-package="com.wenzhuo"/>
+    <!-- 解决静态资源访问问题，如果不加mvc:annotation-driven会导致无法访问handler-->
+
+    <!--   <mvc:default-servlet-handler/>该标签表示默认请求方法，即如果找不到请求的方法，就会直接去寻找相应的静态资源，  -->
+    <!--    例如：传入一个he.html,但是没有找到请求方法he，此时就会去寻找静态资源he.html-->
+    <mvc:default-servlet-handler/>
+    <!--解决响应乱码-->
+    <mvc:annotation-driven>
+        <mvc:message-converters>
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                <constructor-arg value="utf-8"/>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!--要拦截的路径-->
+            <mvc:mapping path="/**"/>
+            <!--排除不拦截的路径：一些静态资源-->
+            <mvc:exclude-mapping path="/static/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/WEB-INF/page/**"></mvc:exclude-mapping>
+            <mvc:exclude-mapping path="/login"></mvc:exclude-mapping>
+            <bean class="com.wenzhuo.interceptor.loginInterceptor"></bean>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>
+    
