@@ -25,7 +25,7 @@ public class gem extends HttpServlet {
             System.out.println("成功");
 
 
-        COM.si.Service.impl.adminserviceimpl adminserviceimpl=new adminserviceimpl();
+       adminserviceimpl adminserviceimpl=new adminserviceimpl();
         Admin ab= adminserviceimpl.login(a,b);
         List abb=new ArrayList<>();
         abb.add(ab);

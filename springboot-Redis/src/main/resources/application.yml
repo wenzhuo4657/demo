@@ -1,0 +1,12 @@
+spring:
+  redis:
+    jedis: # jedis连接池配置
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 1
+  jmx:
+    enabled: false
+
+
+

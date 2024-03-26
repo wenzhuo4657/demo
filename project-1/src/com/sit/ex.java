@@ -1,11 +1,15 @@
 package com.sit;
 
 
+import java.util.LinkedHashMap;
+
 class  zz{
     public static void main(String[] args) {
-      String a="1 2 4 5";
-      String[] arr=a.split(" ");
-        System.out.println(arr.toString());
+        LinkedHashMap<String, Integer>  HashMap =
+                new LinkedHashMap<>(16, 0.75f, true);
+
+
+
     }
 }
 
