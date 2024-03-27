@@ -8,3 +8,7 @@ spring:
 logging:
   pattern:
     console: "%d %clr(%5p) --- [焕发@青春 %5t] %clr(%-40.40c){cyan} : %m %n"
+
+pa:
+  key: HUAWEI
+  count: 10

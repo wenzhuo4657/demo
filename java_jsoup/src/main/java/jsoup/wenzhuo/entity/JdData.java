@@ -3,6 +3,8 @@ package jsoup.wenzhuo.entity;
 import java.util.Date;
 
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.IdType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,6 +23,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 @TableName("jd_data")
 public class JdData  {
     //主键@TableId
+    @TableId(type = IdType.AUTO)
     private Long id;
 
     //商品集合id
