@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.*;
 import java.util.stream.Collectors;
-import static domain.response.dad;
+import static domain.Response.dad;
 import static jdk.nashorn.internal.objects.Global.exit;
 
 /**
@@ -33,25 +33,34 @@ public class Login {
         }
     }
 
-    public  static  String loginOn_passwoed(String username) throws SQLException {
+    public  static  String SelectOn_passwoed(String username)  {
+        String result="";
+        try {
             String str="select  * from  loginUser where  username="+username;
             Statement statement=connection.createStatement();
             ResultSet resultSet=statement.executeQuery(str);
-            String result="";
             while (resultSet.next()){
-                result+=resultSet.getString("password")+",";
+                result+=resultSet.getString("password");
             }
             exit(Optional.of(resultSet),Optional.of(statement));
+        }catch (Exception e){
+            System.out.println(e);
+        }
             return result;
     }
 
 
 
 
-    public static void insertUser(String username, String password) throws SQLException {
-            String str="insert into   loginUser values ("+username+","+password+")";
-            Statement statement=connection.createStatement();
-            statement.executeQuery(str);
+    public static void insertUser(String username, String password)  {
+        Statement statement=null;
+         try {
+             String str="insert into   loginUser values ("+username+","+password+")";
+             connection.createStatement();
+             statement.executeQuery(str);
+         }catch (Exception e){
+             System.out.println("e");
+         }
             exit(null,Optional.of(statement));
 
     }

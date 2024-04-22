@@ -1,42 +1,35 @@
 package servlet;
 
+import connection.Login;
 import domain.Response;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 /**
- * @className: revise
+ * @className: addUser
  * @author: wenzhuo4657
- * @date: 2024/3/24 10:31
+ * @date: 2024/4/18 16:14
  * @Version: 1.0
  * @description:
  */
-
-@WebServlet(name = "reviseServlet" ,value="/gs")
-public class revise extends HttpServlet {
+@WebServlet(name = "AddUser",value = "/addUser")
+public class AddUser extends HttpServlet  {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        //修改密码
-        Cookie[] cookies=req.getCookies();
-        Cookie cokie=null;
-        for (Cookie cookie: cookies){
-            if (cookie.getName().equals("name")){
-                cokie=cookie;
-            }
+        String name=req.getParameter("name");
+        String password1=req.getParameter("password1");
+        String password2=req.getParameter("password2");
+        if (!password1.equals(password2)){
+            Response.dad(resp,"密碼不一致");
+            return;
         }
-        if (cokie!=null){
-            cokie.setValue(req.getParameter("password"));
-        }else{
-
-        }
-        resp.addCookie(cokie);
+        Login.insertUser(name,password1);
         Response.success(resp);
     }
 

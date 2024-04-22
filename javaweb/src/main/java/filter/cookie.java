@@ -1,6 +1,6 @@
 package filter;
 
-import domain.response;
+import domain.Response;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -19,7 +19,7 @@ import java.io.PrintWriter;
  * @Version: 1.0
  * @description:
  */
-@WebFilter(value = "/")
+@WebFilter(value = "/rs")
 public class cookie implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
@@ -31,7 +31,7 @@ public class cookie implements Filter {
                 return;
             }
         }
-        response.dad((HttpServletResponse) servletResponse);
+        Response.dad((HttpServletResponse) servletResponse,"dad");
     }
 
     @Override

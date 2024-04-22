@@ -11,18 +11,20 @@ import java.io.PrintWriter;
  * @Version: 1.0
  * @description:
  */
-public class response {
-    public  static  void dad(HttpServletResponse resp) throws IOException {
+public class Response {
+    public  static  void dad(HttpServletResponse resp,String msg) throws IOException {
         PrintWriter printWriter = resp.getWriter();
         printWriter.println("<html>");
         printWriter.println("<head>");
         printWriter.println("<meta charset='UTF-8'>");
-        printWriter.println("<title>logindad</title>");
+        printWriter.println("<title>dad</title>");
         printWriter.println("</head>");
         printWriter.println("<body>");
-        printWriter.println("<h1>dad</h1>");
+        printWriter.println("<h1>"+msg+"</h1>");
         printWriter.println("</body>");
         printWriter.println("</html>");
+
+
     }
 
     public  static  void success(HttpServletResponse resp) throws IOException {

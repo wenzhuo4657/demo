@@ -1,12 +1,13 @@
 package servlet;
 
 import connection.Login;
-import domain.response;
+import domain.Response;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -24,57 +25,23 @@ public class login extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name=req.getParameter("name");
         String password=req.getParameter("password");
-        //获取cookid，如果没有对应cookie则重新创建，如果有则进行比对
-        Cookie[]  cookies=req.getCookies();
-        Cookie user=null;
-        for(Cookie cookie: cookies){
-           if (cookie.getName().equals("user")){
-               user=cookie;
-           }
+        String str = null;
+        str = Login.SelectOn_passwoed(name);
+        if (str.equals("")){
+            Response.dad(resp,"该用户不存在");
+            return;
         }
-
-        if (user!=null){
-            if (user.getValue().equals(password)){
-                //从cookie中校验
-                HttpSession session=req.getSession();
-                session.setAttribute("first",name);
-
-            }else {
-                response.dad(resp);
-            }
-        }else {
-//            从数据库中校验，并设置cookie
-            boolean is=true;
-            String tr = null;
-            try {
-                tr = Login.loginOn_passwoed(name);
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            }
-            String[] t=tr.split(",");
-            if (t.length==0){
-//                response.dad(resp);
-//                如果不存在该用户，则进行注册，
-                LinkedList
-
-            }else {
-//                如果存在进行校验
-
-
-            }
-
-
-            if (is){
+            if (str.equals(password)){
                 Cookie as=new Cookie("name",password);
                 as.setPath("/");//该cookie在所有路径下有效
                 as.setMaxAge(60*60);
                 resp.addCookie(as);
                 HttpSession session=req.getSession();
                 session.setAttribute("first",name);
+                req.getRequestDispatcher("/index").forward(req,resp);
+            }else{
+                Response.dad(resp,"密碼錯誤");
             }
-
-        }
-        req.getRequestDispatcher("/index").forward(req,resp);
     }
 
 
