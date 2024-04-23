@@ -6,10 +6,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Objects;
-import java.util.Optional;
 
 /**
  * @className: index
@@ -18,19 +16,20 @@ import java.util.Optional;
  * @Version: 1.0
  * @description:
  */
-@WebServlet(name = "index_jsp" ,value = "/index")
+@WebServlet(name = "index_jsp", value = "/index")
 public class index extends HttpServlet {
-    static  String num="num" ;
+    static String num = "num";
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletContext servletContext = req.getServletContext();
-        if (!Objects.isNull(servletContext.getAttribute(num))){
-            servletContext.setAttribute(num,(Integer)servletContext.getAttribute(num)+1);
-        }else {
-            servletContext.setAttribute(num,1);
+        if (!Objects.isNull(servletContext.getAttribute(num))) {
+            servletContext.setAttribute(num, (Integer) servletContext.getAttribute(num) + 1);
+        } else {
+            servletContext.setAttribute(num, 1);
         }
-        System.out.println("访问："+servletContext.getAttribute(num));
-        req.getRequestDispatcher("/index.jsp").forward(req,resp);
+        System.out.println("访问：" + servletContext.getAttribute(num));
+        req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }
 
     @Override

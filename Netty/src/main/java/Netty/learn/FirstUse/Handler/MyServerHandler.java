@@ -20,15 +20,14 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
 //        ByteBuf是对ByteBuffer的封装
         ByteBuf buf = (ByteBuf) msg;
-        System.out.println("客户端："+buf.toString(StandardCharsets.UTF_8));
+        System.out.println("客户端："+buf.toString(StandardCharsets.UTF_8));//解码
     }
 
-//   读取完成后调用
+//   读取完成后调用，就是响应
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         ByteBuf buf= Unpooled.copiedBuffer("hello Client!!".getBytes(StandardCharsets.UTF_8));
         ctx.writeAndFlush(buf);
-
     }
 
 //    出现异常时调用

@@ -1,13 +1,7 @@
 package connection;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
 import java.sql.*;
-import java.util.*;
-import java.util.stream.Collectors;
-import static domain.Response.dad;
-import static jdk.nashorn.internal.objects.Global.exit;
+import java.util.Optional;
 
 /**
  * @className: login
@@ -19,13 +13,14 @@ import static jdk.nashorn.internal.objects.Global.exit;
 
 
 public class Login {
-    static  Connection connection;
+    static Connection connection;
+
     static {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String url="jdbc:mysql://127.0.0.1:3307/root1";
-            connection = DriverManager.getConnection(url,"root","465700");
+            String url = "jdbc:mysql://127.0.0.1:3307/root1";
+            connection = DriverManager.getConnection(url, "root", "465700");
         } catch (ClassNotFoundException e) {
             throw new RuntimeException(e);
         } catch (SQLException e) {
@@ -33,58 +28,56 @@ public class Login {
         }
     }
 
-    public  static  String SelectOn_passwoed(String username)  {
-        String result="";
+    public static String SelectOn_passwoed(String username) {
+        String result = "";
         try {
-            String str="select  * from  loginUser where  username="+username;
-            Statement statement=connection.createStatement();
-            ResultSet resultSet=statement.executeQuery(str);
-            while (resultSet.next()){
-                result+=resultSet.getString("password");
+            String str = "select  * from  loginUser where  username=" + username;
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(str);
+            while (resultSet.next()) {
+                result += resultSet.getString("password");
             }
-            exit(Optional.of(resultSet),Optional.of(statement));
-        }catch (Exception e){
+            exit(Optional.of(resultSet), Optional.of(statement));
+        } catch (Exception e) {
             System.out.println(e);
         }
-            return result;
+        return result;
     }
 
 
-
-
-    public static void insertUser(String username, String password)  {
-        Statement statement=null;
-         try {
-             String str="insert into   loginUser values ("+username+","+password+")";
-             connection.createStatement();
-             statement.executeQuery(str);
-         }catch (Exception e){
-             System.out.println("e");
-         }
-            exit(null,Optional.of(statement));
+    public static void insertUser(String username, String password) {
+        Statement statement = null;
+        try {
+            String str = "insert into   loginUser values (" + username + "," + password + ")";
+            connection.createStatement();
+            statement.executeQuery(str);
+        } catch (Exception e) {
+            System.out.println("e");
+        }
+        exit(null, Optional.of(statement));
 
     }
 
-    public  static  void exit(Optional<ResultSet> resultSet,Optional<Statement> statement){
-            resultSet.ifPresent(resultSet1 -> {
-                try {
-                    resultSet1.close();
-                } catch (SQLException e) {
-                    System.out.println("resultSet关闭异常！！");
-                    throw new RuntimeException(e);
-                }
-            });
-            statement.ifPresent(statement1 -> {
-                try {
-                    statement1.close();
-                } catch (SQLException e) {
-                    System.out.println("statement关闭异常！！");
-                    throw new RuntimeException(e);
-                }
-            });
+    public static void exit(Optional<ResultSet> resultSet, Optional<Statement> statement) {
+        resultSet.ifPresent(resultSet1 -> {
+            try {
+                resultSet1.close();
+            } catch (SQLException e) {
+                System.out.println("resultSet关闭异常！！");
+                throw new RuntimeException(e);
+            }
+        });
+        statement.ifPresent(statement1 -> {
+            try {
+                statement1.close();
+            } catch (SQLException e) {
+                System.out.println("statement关闭异常！！");
+                throw new RuntimeException(e);
+            }
+        });
     }
 
-    public  static  void exitJdbcConnection(Connection connection){
+    public static void exitJdbcConnection(Connection connection) {
         try {
             connection.close();
         } catch (SQLException e) {

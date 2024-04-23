@@ -10,7 +10,7 @@ package domain.entiy;
 public class cr {
 
     private int r;
-    private  int S;
+    private int S;
 
     public int getRs() {
         return r;

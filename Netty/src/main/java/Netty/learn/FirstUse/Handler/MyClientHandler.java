@@ -19,7 +19,7 @@ public class MyClientHandler extends ChannelInboundHandlerAdapter {
 //    连接完成后调用
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
-        ByteBuf buf= Unpooled.copiedBuffer("hello Server!!".getBytes(StandardCharsets.UTF_8));
+        ByteBuf buf= Unpooled.copiedBuffer("hello Server!!".getBytes(StandardCharsets.UTF_8));//编码
         ctx.writeAndFlush(buf);
     }
 

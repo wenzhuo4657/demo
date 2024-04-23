@@ -12,7 +12,7 @@ import java.io.PrintWriter;
  * @description:
  */
 public class Response {
-    public  static  void dad(HttpServletResponse resp,String msg) throws IOException {
+    public static void dad(HttpServletResponse resp, String msg) throws IOException {
         PrintWriter printWriter = resp.getWriter();
         printWriter.println("<html>");
         printWriter.println("<head>");
@@ -20,14 +20,14 @@ public class Response {
         printWriter.println("<title>dad</title>");
         printWriter.println("</head>");
         printWriter.println("<body>");
-        printWriter.println("<h1>"+msg+"</h1>");
+        printWriter.println("<h1>" + msg + "</h1>");
         printWriter.println("</body>");
         printWriter.println("</html>");
 
 
     }
 
-    public  static  void success(HttpServletResponse resp) throws IOException {
+    public static void success(HttpServletResponse resp) throws IOException {
         PrintWriter printWriter = resp.getWriter();
         printWriter.println("<html>");
         printWriter.println("<head>");

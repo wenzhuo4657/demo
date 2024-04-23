@@ -2,14 +2,11 @@ package filter;
 
 import domain.Response;
 
-import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 
 
 /**
@@ -24,19 +21,21 @@ public class cookie implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletRequest;
-        Cookie[] cookies=request.getCookies();
-        for (Cookie cookie:cookies){
-            if (cookie.getName().equals("name")){
+        Cookie[] cookies = request.getCookies();
+        for (Cookie cookie : cookies) {
+            if (cookie.getName().equals("name")) {
                 filterChain.doFilter(servletRequest, servletResponse);
                 return;
             }
         }
-        Response.dad((HttpServletResponse) servletResponse,"dad");
+        Response.dad((HttpServletResponse) servletResponse, "dad");
     }
 
     @Override
-    public void init(FilterConfig filterConfig) throws ServletException {}
+    public void init(FilterConfig filterConfig) throws ServletException {
+    }
 
     @Override
-    public void destroy() {}
+    public void destroy() {
+    }
 }

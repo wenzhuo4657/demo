@@ -6,6 +6,8 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -27,11 +29,14 @@ public class Server {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
             serverBootstrap.group(AccoptGroup, WorkGroup)//设置group
                     .channel(NioServerSocketChannel.class)//设置通道
-                    .option(ChannelOption.SO_BACKLOG,1024)        //设置用于存放由于没有空闲线程的导致客户端连接暂存至队列的长度
+                    .option(ChannelOption.SO_BACKLOG,1024)    //设置用于存放由于没有空闲线程的导致客户端连接暂存至队列的长度
                     .childHandler(new ChannelInitializer<SocketChannel>(){
                                       @Override
                                       protected void initChannel(SocketChannel ch) throws Exception {
-                                          ch.pipeline().addLast( new MyServerHandler());
+                                          ChannelPipeline pipeline = ch.pipeline();
+                                          pipeline.addLast(new StringDecoder());//解码，入站
+                                          pipeline.addLast(new StringEncoder());//编码，出站，
+                                          pipeline.addLast( new MyServerHandler());
                                       }
                                   }
                             );
