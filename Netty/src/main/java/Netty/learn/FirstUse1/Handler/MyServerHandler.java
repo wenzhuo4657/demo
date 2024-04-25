@@ -18,6 +18,7 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
 //    客户端发送来数据时调用
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+
 //        ByteBuf是对ByteBuffer的封装
         ByteBuf buf = (ByteBuf) msg;
         System.out.println("客户端："+buf.toString(StandardCharsets.UTF_8));//解码

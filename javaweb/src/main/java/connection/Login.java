@@ -35,7 +35,7 @@ public class Login {
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(str);
             while (resultSet.next()) {
-                result += resultSet.getString("password");
+                result += resultSet.getString(1);
             }
             exit(Optional.of(resultSet), Optional.of(statement));
         } catch (Exception e) {
@@ -78,6 +78,7 @@ public class Login {
     }
 
     public static  void select(){
+
 
     }
 

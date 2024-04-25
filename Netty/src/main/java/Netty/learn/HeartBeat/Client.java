@@ -44,7 +44,7 @@ public class Client {
             Random random = new Random();
             while (channel.isActive()){
                 int num=random.nextInt(10);
-                Thread.sleep(num*1000);
+                Thread.sleep(1*1000);
                 channel.writeAndFlush(packet);
             }
             channel.closeFuture().sync();
