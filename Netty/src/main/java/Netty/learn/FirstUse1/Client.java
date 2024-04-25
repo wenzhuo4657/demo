@@ -1,6 +1,6 @@
-package Netty.learn.FirstUse;
+package Netty.learn.FirstUse1;
 
-import Netty.learn.FirstUse.Handler.MyClientHandler;
+import Netty.learn.FirstUse1.Handler.MyClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

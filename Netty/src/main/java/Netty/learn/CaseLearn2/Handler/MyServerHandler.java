@@ -1,4 +1,4 @@
-package Netty.learn.CaseLearn.Handler;
+package Netty.learn.CaseLearn2.Handler;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -15,7 +15,28 @@ import java.util.Date;
  * @author: wenzhuo4657
  * @date: 2024/4/23 18:52
  * @Version: 1.0
- * @description:
+ * @description: SimpleChannelInboundHandler:该api会自动释放资源
+ * 自动资源管理：SimpleChannelInboundHandler 自动处理 ByteBuf 的引用计数释放。
+ * 当 channelRead0() 方法返回时，若 msg 是 ByteBuf 或其子类，会自动调用 release() 方法释放资源，减轻了开发者的内存管理负担。
+ * 源码：
+ *     @Override
+ *     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+ *         boolean release = true;
+ *         try {
+ *             if (acceptInboundMessage(msg)) {
+ *                 @SuppressWarnings("unchecked")
+ *                 I imsg = (I) msg;
+ *                 channelRead0(ctx, imsg);//注意此处
+ *             } else {
+ *                 release = false;
+ *                 ctx.fireChannelRead(msg);
+ *             }
+ *         } finally {
+ *             if (autoRelease && release) {
+ *                 ReferenceCountUtil.release(msg);//注意此处
+ *             }
+ *         }
+ *     }
  */
 
 

@@ -1,13 +1,11 @@
-package Netty.learn.CaseLearn;
+package Netty.learn.CaseLearn2;
 
-import Netty.learn.CaseLearn.Handler.MyServerHandler;
-import com.sun.xml.internal.fastinfoset.algorithm.BuiltInEncodingAlgorithm;
+import Netty.learn.CaseLearn2.Handler.MyServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
-import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 

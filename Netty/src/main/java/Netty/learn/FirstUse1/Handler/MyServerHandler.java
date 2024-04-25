@@ -1,4 +1,4 @@
-package Netty.learn.FirstUse.Handler;
+package Netty.learn.FirstUse1.Handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -27,7 +27,7 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
     @Override
     public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
         ByteBuf buf= Unpooled.copiedBuffer("hello Client!!".getBytes(StandardCharsets.UTF_8));
-        ctx.writeAndFlush(buf);
+        ctx.writeAndFlush(buf);//出站逻辑
     }
 
 //    出现异常时调用
@@ -36,4 +36,7 @@ public class MyServerHandler extends ChannelInboundHandlerAdapter {
         System.out.println(cause.getMessage());
         ctx.close();
     }
+
+
+
 }

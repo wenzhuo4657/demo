@@ -1,8 +1,7 @@
-package Netty.learn.CaseLearn;
+package Netty.learn.CaseLearn2;
 
 
-import Netty.learn.CaseLearn.Handler.MyClientHandler;
-import Netty.learn.CaseLearn.Handler.MyServerHandler;
+import Netty.learn.CaseLearn2.Handler.MyClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
