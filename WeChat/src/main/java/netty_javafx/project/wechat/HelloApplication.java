@@ -1,20 +1,26 @@
 package netty_javafx.project.wechat;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+import netty_javafx.project.wechat.view.ILogin.ILoginEvent;
+import netty_javafx.project.wechat.view.ILogin.ILoginMethod;
+import netty_javafx.project.wechat.view.LoginController;
+
 
 import java.io.IOException;
 
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
-        stage.setScene(scene);
-        stage.show();
+        ILoginMethod login = new LoginController(
+                new ILoginEvent() {
+                    @Override
+                    public void doLoginCheck(String userId, String userPassword) {
+                        System.out.println("登陆 userId：" + userId + "userPassword：" + userPassword);
+                    }
+                });
+//注意此处使用匿名内部类的方式实现了登录事件
+        login.doShow();
     }
 
     public static void main(String[] args) {
