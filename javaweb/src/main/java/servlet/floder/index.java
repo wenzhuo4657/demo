@@ -16,7 +16,7 @@ import java.util.Objects;
  * @Version: 1.0
  * @description:
  */
-@WebServlet(name = "index_jsp", value = "/index")
+@WebServlet(name = "index", value = "/index")
 public class index extends HttpServlet {
     static String num = "num";
 

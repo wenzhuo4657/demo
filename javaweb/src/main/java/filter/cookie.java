@@ -17,7 +17,7 @@ import java.io.IOException;
  * @Version: 1.0
  * @description:
  */
-@WebFilter(value = "/rs")
+@WebFilter(value = "/index")
 public class cookie implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
