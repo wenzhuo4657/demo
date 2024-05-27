@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring WebSocket Chat</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.bootcss.com/sockjs-client/1.1.1/sockjs.js"></script>
+</head>
+<body>
+
+请输入：<input type="text" id="message" placeholder="Type your message">
+<button onclick="sendMessage()">Send</button>
+<button onclick="websocketClose()">关闭连接</button>
+<div id="chat"></div>
+
+<script>
+    var socket = null;
+    if ('WebSocket' in window) {
+        // 后端服务port为22900
+        socket = new WebSocket("ws://localhost:22900/websocket/server");
+    } else if ('MozWebSocket' in window) {
+        socket = new MozWebSocket("ws://localhost:22900/websocket/server");
+    } else {
+        socket = new SockJS("http://localhost:22900/sockjs/server");
+    }
+
+    // 接收消息触发
+    socket.onmessage = function (event) {
+        showMessage(event.data);
+    };
+    // 创建连接触发
+    socket.onopen = function (event) {
+        console.log(event.type);
+    };
+    // 连接异常触发
+    socket.onerror = function (event) {
+        console.log(event)
+    };
+    // 关闭连接触发
+    socket.onclose = function (closeEvent) {
+        console.log(closeEvent.reason);
+    };
+
+    //发送消息
+    function sendMessage() {
+        if (socket.readyState === socket.OPEN) {
+            var message = document.getElementById('message').value;
+            socket.send(message);
+            console.log("发送成功!");
+        } else {
+            console.log("连接失败!");
+        }
+
+    }
+
+    function showMessage(message) {
+        document.getElementById('chat').innerHTML += '<p>' + message + '</p>';
+    }
+
+    function websocketClose() {
+        socket.close();
+        console.log("连接关闭");
+    }
+
+    window.close = function () {
+        socket.onclose();
+    };
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+server:
+  port: 22900
+myfeature:
+  enabled=true
+
+spring:
+  mail:
+    host: smtp.qq.com
+    username: houwenzhuo4657@qq.com
+    password: irdhuwrhurapdiia
+    protocol: smtps
+    port: 465
+    from: houwenzhuo4657@qq.com
+logging:
+  level:
+    root: warn
