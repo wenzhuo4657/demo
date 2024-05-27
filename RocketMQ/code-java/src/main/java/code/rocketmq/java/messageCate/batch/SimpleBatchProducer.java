@@ -6,7 +6,7 @@ import org.apache.rocketmq.common.message.Message;
 import java.util.ArrayList;
 import java.util.List;
   /**
-     *  des: 批量消息
+     *  des: 批量生产消息
    *
    *  。1.批处理消息的大小不能超过 1 MiB，否则需要拆分。
    *  2 ，同批次中的消息主题必须相同

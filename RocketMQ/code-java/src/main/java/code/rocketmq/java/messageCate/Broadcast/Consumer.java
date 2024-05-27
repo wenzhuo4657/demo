@@ -17,9 +17,10 @@ import java.util.List;
  * @date: 2024/5/3 16:31
  * @Version: 1.0
  * @description:
- * 消息模式
+ * 消息的消费模式
  * 聚类：应用聚类模式时，每条消息都需要由消费者组中的一个消费者处理。
  * 广播：在应用广播模式时，RocketMQ 将每条消息广播给消费者组内的所有消费者，确保每个消费者至少消费一次该消息。*
+ *
  */
 public class Consumer {
     public static void main(String[] args) throws MQClientException {
