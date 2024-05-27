@@ -1,11 +1,7 @@
 package com.si1;
 
 
-import java.text.SimpleDateFormat;
 import java.util.Arrays;
-import java.util.Date;
-import java.util.SimpleTimeZone;
-import  com.s.*;
 public class SortAlgorithm {
 
 
@@ -29,6 +25,9 @@ class jj{
             if (h<=0){
                 break;
             }
+              /**
+                 *  des: 这里使用的是直接插入排序，但在内层for循环中保证了希尔排序分组，其每次插入排序都在其分组内进行。
+                 * */
             for (int i=h;i< a.length;i++){
                 int j=i;
                 int m=a[j];
@@ -94,7 +93,6 @@ class jj2{
             arr[l]=arr[r];
             arr[r]=temp;
 
-            //问：这两个if是为了保证在临界值和中间值相等的时候，据情况移动，保证在下一次跳过相等的情况进行判断
             if (arr[l]==arr[pivot]){
                 r--;
             }
@@ -158,7 +156,6 @@ class jj3{
         while (i<=min&&j<=right){
             if (arr[i]<=arr[j]){
                 temp[t]=arr[i];
-
                 i++;
             }else {
                 temp[t]=arr[j];
@@ -169,7 +166,7 @@ class jj3{
         }
 
         //(2)将剩余数据依次放到temp数组中，
-//        注意：由于递归特点，此时已经排过序的位置已经变成由小到大的了
+//        注意：由于递归特点，此时已经排过序的位置已经变成由小到大的了，所以下列两个while只能进去一个·，
         while (i<=min){
             temp[t]=arr[i];
             i++;

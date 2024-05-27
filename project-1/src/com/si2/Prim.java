@@ -2,6 +2,13 @@ package com.si2;
 
 import java.util.Arrays;
 
+  /**
+     * des:
+   *  核心目标：加权值之和但包含所有点，即最小生成树
+   *  贪心策略，
+   *  起点已访问，终点未访问的最短边
+   *  该策略同时保证了不会造成回路
+     * */
 public class Prim {
     public static void main(String[] args) {
         char [] dot={'A','B','C','D','E','F','G'};
@@ -25,7 +32,7 @@ public class Prim {
 //最小生成树，可解决最短路径问题
 class Mintree{
     Mgraph HH;
-    int[] [] Mintree;//最小生成树
+    int[] [] Mintree;//最小生成树，也是图，但这里是有向图
     int n;//点的数量
     char [] Dot;//点的值
 
@@ -59,9 +66,7 @@ class Mintree{
             }
             if (s==Dot.length-1){
                 return;//没找到对应的起始点
-
             }
-
         }
 
 
