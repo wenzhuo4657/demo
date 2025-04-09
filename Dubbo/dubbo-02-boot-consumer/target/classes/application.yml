@@ -1,0 +1,13 @@
+
+project:
+  folder:  E:/logs/app/dubbo
+
+dubbo:
+  application:
+    qos-enable: false
+    name: dubbo-boot-consumer
+
+
+
+
+

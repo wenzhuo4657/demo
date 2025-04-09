@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/beans/spring-util.xsd
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <util:list  id="len">
+        <ref bean="helll"></ref>
+    </util:list>
+    <util:map id="men">
+        <entry>
+            <key>
+                <value>fasjlk</value>
+            </key>
+            <ref bean="helll"></ref>
+        </entry>
+
+    </util:map>
+
+    <bean  id="hello"  class="org.example.helloword">
+        <property name="name" value="王者"></property>
+        <property name="id" >
+            <value><![CDATA[笨蛋]]></value>
+        </property>
+<!--        通过调用set方法注入-->
+    </bean>
+    <bean id="helll"  class="org.example.helloword">
+        <constructor-arg name="id" value="笨蛋"></constructor-arg>
+        <constructor-arg name="name" >
+            <value>笨蛋11</value>
+        </constructor-arg>
+<!--        通过构造器注入-->
+    </bean>
+
+
+    <bean id="dept1" class="firm.dept">
+        <property name="dname" value="财务"></property>
+    </bean>
+
+    <bean id="emp" class="firm.Emp">
+        <property name="EName" value="李四"></property>
+        <property name="age" value="4"></property>
+        <property name="dept"  ref="dept1"></property>
+    </bean>
+</beans>

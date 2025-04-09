@@ -1,0 +1,15 @@
+
+project:
+  folder:  E:/logs/app/dubbo
+
+dubbo:
+  application:
+    name: first
+    qos-enable: false
+  protocol:
+    name: dubbo
+    port: -1
+
+
+
+

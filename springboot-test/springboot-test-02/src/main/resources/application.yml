@@ -1,0 +1,20 @@
+
+spring:
+  #springboot整合druid数据源的相关配置
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/root1?serverTimezone=UTC
+      username: root
+
+
+#springboot整合mybatisplus的相关配置
+mybatis-plus:
+  global-config:
+    db-config:
+      #配置id的生成策略是数据库的主键(id字段)自增策略，不使用MyBatisPlus自带的雪花算法生成主键id
+      id-type: auto
+
+  #开启MyBatisPlus的日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

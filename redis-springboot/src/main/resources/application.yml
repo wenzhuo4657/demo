@@ -1,0 +1,15 @@
+spring:
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port:  6379
+    jedis:
+      pool:
+        max-active:  8 #最大连接数
+        max-idle:  8 # 最大空闲数
+        min-idle: 1 #最小空闲数
+    lettuce:
+      pool:
+        max-active: 8 #最大连接数
+        max-idle: 8 # 最大空闲数
+        min-idle: 1 #最小空闲数
