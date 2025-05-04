@@ -13,6 +13,8 @@ spring:
         group: my_discovery
         ip: s8a6fa.natappfree.cc
         port: 80
+    config:
+
 
 server:
   port: 8082
