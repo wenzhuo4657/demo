@@ -1,0 +1,23 @@
+# 端口
+server:
+  port: 9001
+
+# Sa-Token 配置
+sa-token:
+  # SSO-相关配置
+  sso-client:
+    # SSO-Server端主机地址
+    server-url: http://sso.stp.com:9000
+
+  # 配置 Sa-Token 单独使用的Redis连接 （此处需要和SSO-Server端连接同一个Redis）
+  alone-redis:
+    # Redis数据库索引
+    database: 1
+    # Redis服务器地址
+    host: 117.72.36.124
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password:
+    # 连接超时时间
+    timeout: 10s

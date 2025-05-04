@@ -287,4 +287,385 @@ TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
 <td class="Message">Graceful shutdown complete</td>
 </tr>
 </table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Fri Apr 18 17:04:06 CST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="MDC">MDC</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:04:06,876</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.example.Main</td>
+<td class="MDC"></td>
+<td class="Message">Starting Main using Java 17.0.14 on back-the with PID 19265 (/home/houwenzhuo/桌面/code/code/java/idea/try/springboot3/target/classes started by houwenzhuo in /home/houwenzhuo/桌面/code/code/java/idea/try/springboot3)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:04:06,880</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.example.Main</td>
+<td class="MDC"></td>
+<td class="Message">No active profile set, falling back to 1 default profile: &quot;default&quot;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:04:07,441</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:04:07,447</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:04:07,448</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Starting service [Tomcat]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:04:07,448</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardEngine</td>
+<td class="MDC"></td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.83]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:04:07,498</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:04:07,499</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Root WebApplicationContext: initialization completed in 588 ms</td>
+</tr>
+
+<tr class="warn even">
+<td class="Date">2025-04-18 17:04:07,537</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &#39;startupController&#39; defined in file [/home/houwenzhuo/桌面/code/code/java/idea/try/springboot3/target/classes/org/example/config/StartupController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name &#39;startupEventLogger&#39; defined in file [/home/houwenzhuo/桌面/code/code/java/idea/try/springboot3/target/classes/org/example/config/StartupEventLogger.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type &#39;org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup&#39; available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:04:07,539</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Stopping service [Tomcat]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:04:07,547</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener</td>
+<td class="MDC"></td>
+<td class="Message">
+
+Error starting ApplicationContext. To display the conditions report re-run your application with &#39;debug&#39; enabled.</td>
+</tr>
+
+<tr class="error odd">
+<td class="Date">2025-04-18 17:04:07,561</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="Logger">org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter</td>
+<td class="MDC"></td>
+<td class="Message">
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in org.example.config.StartupEventLogger required a bean of type &#39;org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup&#39; that could not be found.
+
+
+Action:
+
+Consider defining a bean of type &#39;org.springframework.boot.context.metrics.buffering.BufferingApplicationStartup&#39; in your configuration.
+</td>
+</tr>
+</table>
+</body></html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Fri Apr 18 17:05:03 CST 2025</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Date">Date</td>
+<td class="Thread">Thread</td>
+<td class="Level">Level</td>
+<td class="Logger">Logger</td>
+<td class="MDC">MDC</td>
+<td class="Message">Message</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:03,701</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.example.Main</td>
+<td class="MDC"></td>
+<td class="Message">Starting Main using Java 17.0.14 on back-the with PID 19435 (/home/houwenzhuo/桌面/code/code/java/idea/try/springboot3/target/classes started by houwenzhuo in /home/houwenzhuo/桌面/code/code/java/idea/try/springboot3)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:03,703</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.example.Main</td>
+<td class="MDC"></td>
+<td class="Message">No active profile set, falling back to 1 default profile: &quot;default&quot;</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,263</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.embedded.tomcat.TomcatWebServer</td>
+<td class="MDC"></td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:04,268</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,269</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Starting service [Tomcat]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:04,270</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardEngine</td>
+<td class="MDC"></td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.83]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,325</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]</td>
+<td class="MDC"></td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:04,325</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Root WebApplicationContext: initialization completed in 591 ms</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,542</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Date">2025-04-18 17:05:04,545</td>
+<td class="Thread">main</td>
+<td class="Level">WARN</td>
+<td class="Logger">org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext</td>
+<td class="MDC"></td>
+<td class="Message">Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean &#39;webServerStartStop&#39;; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,548</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Pausing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:04,548</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.catalina.core.StandardService</td>
+<td class="MDC"></td>
+<td class="Message">Stopping service [Tomcat]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,552</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Stopping ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info odd">
+<td class="Date">2025-04-18 17:05:04,553</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.apache.coyote.http11.Http11NioProtocol</td>
+<td class="MDC"></td>
+<td class="Message">Destroying ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+</tr>
+
+<tr class="info even">
+<td class="Date">2025-04-18 17:05:04,558</td>
+<td class="Thread">main</td>
+<td class="Level">INFO</td>
+<td class="Logger">org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener</td>
+<td class="MDC"></td>
+<td class="Message">
+
+Error starting ApplicationContext. To display the conditions report re-run your application with &#39;debug&#39; enabled.</td>
+</tr>
+
+<tr class="error odd">
+<td class="Date">2025-04-18 17:05:04,571</td>
+<td class="Thread">main</td>
+<td class="Level">ERROR</td>
+<td class="Logger">org.springframework.boot.SpringApplication</td>
+<td class="MDC"></td>
+<td class="Message">Application run failed</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.springframework.context.ApplicationContextException: Failed to start bean &#39;webServerStartStop&#39;; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:357)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:156)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:124)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:946)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:594)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:732)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.SpringApplication.run(SpringApplication.java:1289)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.example.Main.main(Main.java:56)
+<br />Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:229)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:179)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 14 common frames omitted
+<br />Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardService.addConnector(StandardService.java:235)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 16 common frames omitted
+<br />Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:171)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardService.addConnector(StandardService.java:232)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 18 common frames omitted
+<br />Caused by: java.net.BindException: 地址已在使用
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/sun.nio.ch.Net.bind0(Native Method)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/sun.nio.ch.Net.bind(Net.java:555)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:276)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:231)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1332)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1418)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:665)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.Connector.startInternal(Connector.java:1039)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;	... 20 common frames omitted
+</td></tr></table>
 </body></html>
