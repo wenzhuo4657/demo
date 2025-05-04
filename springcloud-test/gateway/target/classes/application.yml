@@ -1,0 +1,17 @@
+spring:
+  application:
+    name:  gateway
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        group: my_discovery
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+        - id: method_route
+          uri: lb://services-order
+          predicates:
+            - Method=GET
+server:
+  port: 80

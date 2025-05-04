@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "stu",
+      "type": "com.wenzhuo4657.domain.stu",
+      "sourceType": "com.wenzhuo4657.domain.stu"
+    }
+  ],
+  "properties": [
+    {
+      "name": "stu.age",
+      "type": "java.lang.String",
+      "sourceType": "com.wenzhuo4657.domain.stu"
+    },
+    {
+      "name": "stu.name",
+      "type": "java.lang.String",
+      "sourceType": "com.wenzhuo4657.domain.stu"
+    }
+  ],
+  "hints": []
+}

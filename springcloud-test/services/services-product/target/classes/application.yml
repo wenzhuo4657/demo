@@ -1,0 +1,22 @@
+spring:
+  application:
+    name:  services-product
+  cloud:
+    sentinel:
+      transport:
+        port: 4001
+        dashboard: localhost:8080
+      eager:  true # 客户端启动完成后立即连接面板， 而不是等待第一次连接
+    nacos:
+      server-addr: 117.72.36.124:8848
+      discovery:
+        group: my_discovery
+        ip: s8a6fa.natappfree.cc
+        port: 80
+
+server:
+  port: 8082
+
+feign:
+  sentinel:
+    enabled: true

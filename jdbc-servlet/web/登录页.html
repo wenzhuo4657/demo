@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			text-decoration:none;
+			text-decoration: none; 
+		/* 	是CSS样式属性，用于去除文本的装饰效果，通常用于超链接。
+			默认情况下，超链接文本会有下划线效果，以示区分普通文本和链接。
+			使用 text-decoration: none; 可以去除超链接文本的下划线装饰。	
+			除了去除下划线，text-decoration: none; 
+			还可以去除其他文本装饰效果，如删除线（line-through）、上划线（overline）和波浪线（wavy line）等。
+			可以通过设置不同的属性值来实现不同的文本装饰效果。 */
+		}
+		
+		body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		background-color: #a29bfe;
+		background-image: url('img/background.png');
+		background-size: cover;
+		}
+		.login{
+			
+			width: 550px;
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 116px;
+			background: linear-gradient( to right bottom, 
+			rgba(255,255,255,.7), rgba(255,255,255,.5), rgba(255,255,255,.4) );
+			
+			
+		}
+		
+		.box{
+			
+			overflow:hidden;
+			
+			
+		}
+		.table{
+			
+			top: 2px;
+			font: 900 40px '';
+			text-align: center;
+			letter-spacing: 1px;
+			color: #3d3d3d;
+		}
+		.box input{
+		    width: 100%;
+		    margin-bottom: 20px;
+		    outline: none;
+		    border: 0;
+		    padding: 10px;
+		    border-bottom: 3px solid rgb(150, 150, 240);
+		    background-color: transparent;
+		    font: 900 16px '';
+		}
+		.go{
+		    text-align: center;
+		    display: block;
+		    height: 24px;
+		    padding: 12px;
+		    font: 900 20px '';
+		    border-radius: 10px;
+		    margin-top: 20px;
+		    color: #fff;
+		    letter-spacing: 3px;
+		    background-image: linear-gradient(to left, #fd79a8, #a29bfe);
+		}
+	</style>
+	<body>
+		<div class="login">
+			<div  class="box">
+			<p  class="table">login</p>
+			<br>
+			<form action="/rs"   method="get">
+				<input type="text" name="jack"     accesskey="s">
+				<input type="password"  name="password">
+				<input type="submit"  class="go" value="注册" >
+				
+			</form>
+			
+			
+				
+			</div>
+			
+		</div>
+	</body>
+	
+	<script>
+		 // 监听按键事件
+		  document.addEventListener('keydown', function(event) {
+		    // 检查按下的键是否为回车键
+		    if (event.keyCode === 13) {
+		      event.preventDefault(); // 阻止默认的回车键行为
+		
+		      // 获取当前聚焦元素的索引
+		      var currentInput = document.activeElement;
+		      var inputs = Array.from(document.getElementsByTagName('input'));
+		      var currentIndex = inputs.indexOf(currentInput);
+		
+		      // 计算下一个聚焦元素的索引
+		      var nextIndex = currentIndex + 1;
+		      if (nextIndex >= inputs.length) {
+		        nextIndex = 0;
+		      }
+		
+		      // 将焦点设置在下一个元素上
+		      inputs[nextIndex].focus();
+		    }
+		  });
+		
+	</script>
+</html>

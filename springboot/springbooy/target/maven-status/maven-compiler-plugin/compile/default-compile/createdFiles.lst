@@ -1,0 +1,4 @@
+com\wenzhuo4657\domain\stu.class
+META-INF\spring-configuration-metadata.json
+com\wenzhuo4657\controller\HelloController.class
+com\wenzhuo4657\HelloApplication.class

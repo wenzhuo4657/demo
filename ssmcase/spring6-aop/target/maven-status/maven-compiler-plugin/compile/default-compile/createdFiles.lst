@@ -1,0 +1,6 @@
+com\aop\case1\Calculatorimpl.class
+com\aop\case1\Aspectxml\LogAspect.class
+com\aop\case1\Calculator.class
+com\aop\case1\Aspect\LogAspect.class
+com\aop\case1\proxy\proxy$1.class
+com\aop\case1\proxy\proxy.class

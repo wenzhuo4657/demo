@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/pachong?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true
+    username: root
+    password: 465700
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+logging:
+  pattern:
+    console: "%d %clr(%5p) --- [wenzhuo465700 %5t] %clr(%-40.40c){cyan} : %m %n"
+
+pa:
+  key: java
+  count: 1

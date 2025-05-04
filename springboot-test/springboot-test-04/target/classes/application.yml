@@ -1,0 +1,21 @@
+
+server:
+  port: 8081
+
+#配置H2管理控制台参数
+spring:
+  h2:
+    console:
+      #开启H2数据库的控制台
+      enabled: true
+      #访问路径，可自定义访问路径
+      path: /h2
+
+  #数据源
+  datasource:
+    url: jdbc:h2:~/test
+    hikari:
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: 123456
+

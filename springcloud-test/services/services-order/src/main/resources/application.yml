@@ -1,0 +1,26 @@
+spring:
+  application:
+    name:  services-order
+  cloud:
+    sentinel:
+      transport:
+        port: 4000
+        dashboard: localhost:8080
+      eager: true
+    nacos:
+      server-addr: 117.72.36.124:8848
+      discovery:
+        group: my_discovery
+        server-addr:  117.72.36.124:8848
+        ip: s8a6fa.natappfree.cc
+        port: 80
+
+
+server:
+  port: 8081
+
+
+feign:
+  sentinel:
+    enabled: true
+

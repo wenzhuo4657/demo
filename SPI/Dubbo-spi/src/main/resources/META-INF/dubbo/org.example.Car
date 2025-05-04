@@ -1,0 +1,7 @@
+toyota=org.example.ToyotaCar
+honda=org.example.HondaCar
+ali=org.example.HondaCar
+wrapper=org.example.aop.CarWrapper1
+wrapper=org.example.aop.CarWrapper2
+Race=org.example.ioc.RaceRes
+red=org.example.ioc.PenRes
