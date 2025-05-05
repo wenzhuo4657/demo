@@ -15,6 +15,7 @@
     <modules>
         <module>config-server-test</module>
         <module>config-client-test</module>
+        <module>bootstrap-configtest-</module>
     </modules>
 
     <properties>
