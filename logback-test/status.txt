@@ -1,0 +1,335 @@
+11:33:11,138 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+11:33:11,143 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+11:33:11,143 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+11:33:11,143 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+11:33:11,143 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+11:33:11,315 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+11:33:11,335 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+11:33:11,335 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+11:33:11,344 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747193591341)
+11:33:11,347 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+11:33:11,348 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+11:33:11,360 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+11:33:11,361 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:33:11,371 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@103f852 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+11:33:11,416 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+11:33:11,416 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+11:33:11,416 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+11:33:11,417 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+11:33:11,417 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+11:33:11,418 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2893de87 - End of configuration.
+11:33:11,418 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@25a65b77 - Registering current configuration as safe fallback point
+11:33:11,418 |-INFO in org.example.MyConfigurator@2ed0fbae - 自定义配置: logback-spring.xml 加载成功，
+11:33:11,423 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 276 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:15:58,869 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:15:58,904 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:15:58,904 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:15:58,910 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747206958908)
+15:15:58,914 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:15:58,914 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+15:15:58,927 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:15:58,928 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:15:58,939 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@103f852 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:15:58,986 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:15:58,986 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:15:58,986 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:15:58,988 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:15:58,988 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:15:58,989 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2893de87 - End of configuration.
+15:15:58,989 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@25a65b77 - Registering current configuration as safe fallback point
+15:15:58,989 |-INFO in org.example.MyConfigurator@2ed0fbae - 自定义配置: logback-spring.xml 加载成功，
+15:15:58,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 397 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:16:49,276 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:16:49,282 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:16:49,282 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:16:49,282 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:16:49,282 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:16:49,475 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:16:49,500 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:16:49,500 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:16:49,508 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747207009505)
+15:16:49,511 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:16:49,512 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+15:16:49,526 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:16:49,526 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:16:49,543 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@103f852 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:16:49,596 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:16:49,596 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:16:49,597 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:16:49,597 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:16:49,597 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:16:49,598 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2893de87 - End of configuration.
+15:16:49,600 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@25a65b77 - Registering current configuration as safe fallback point
+15:16:49,600 |-INFO in org.example.MyConfigurator@2ed0fbae - 自定义配置: logback-spring.xml 加载成功，
+15:16:49,606 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 319 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:18:42,730 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:18:42,756 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:18:42,756 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:18:42,756 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:18:42,756 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:18:42,953 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:18:42,980 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:18:42,980 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:18:42,987 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747207122984)
+15:18:42,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:18:42,991 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:18:43,006 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:18:43,006 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:18:43,020 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@103f852 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:18:43,077 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:18:43,077 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:18:43,077 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:18:43,078 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:18:43,078 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:18:43,079 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@2893de87 - End of configuration.
+15:18:43,081 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@25a65b77 - Registering current configuration as safe fallback point
+15:18:43,081 |-INFO in org.example.MyConfigurator@2ed0fbae - 自定义配置: logback-spring.xml 加载成功，
+15:18:43,085 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 325 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:33:52,308 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:33:52,312 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:33:52,312 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:33:52,312 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:33:52,312 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:33:52,507 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:33:52,530 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:33:52,530 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:33:52,532 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:33:52,532 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:33:52,532 |-INFO in ch.qos.logback.core.util.ContextUtil@37d31475 - Registering shutdown hook with JVM runtime.
+15:33:52,539 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747208032536)
+15:33:52,542 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:33:52,542 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:33:52,552 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:33:52,553 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:33:52,565 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@44a3ec6b - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:33:52,606 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:33:52,606 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:33:52,606 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:33:52,606 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:33:52,607 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:33:52,607 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@3c87521 - End of configuration.
+15:33:52,608 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5af97850 - Registering current configuration as safe fallback point
+15:33:52,608 |-INFO in org.example.MyConfigurator@5ef60048 - 自定义配置: logback-spring.xml 加载成功，
+15:33:52,612 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 297 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:33:52,618 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+15:33:52,619 |-INFO in ch.qos.logback.classic.LoggerContext[default] - ShutdownHook removal result: true
+15:34:06,645 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:34:06,649 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:34:06,649 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:34:06,649 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:34:06,649 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:34:06,810 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:34:06,829 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:34:06,829 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:34:06,831 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:34:06,831 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:34:06,832 |-INFO in ch.qos.logback.core.util.ContextUtil@37d31475 - Registering shutdown hook with JVM runtime.
+15:34:06,837 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747208046835)
+15:34:06,839 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:34:06,839 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:34:06,850 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:34:06,850 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:34:06,860 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@44a3ec6b - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:34:06,902 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:34:06,902 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:34:06,902 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:34:06,903 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:34:06,903 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:34:06,904 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@3c87521 - End of configuration.
+15:34:06,906 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5af97850 - Registering current configuration as safe fallback point
+15:34:06,906 |-INFO in org.example.MyConfigurator@5ef60048 - 自定义配置: logback-spring.xml 加载成功，
+15:34:06,910 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 257 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:34:06,919 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+15:34:06,919 |-INFO in ch.qos.logback.classic.LoggerContext[default] - ShutdownHook removal result: true
+15:41:57,818 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:41:57,830 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:41:57,830 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:41:57,830 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:41:57,830 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:41:57,999 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:41:58,020 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:41:58,020 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:41:58,021 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:41:58,021 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:41:58,022 |-INFO in ch.qos.logback.core.util.ContextUtil@37d31475 - Registering shutdown hook with JVM runtime.
+15:41:58,027 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747208518025)
+15:41:58,029 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:41:58,030 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:41:58,039 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:41:58,039 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:41:58,048 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@44a3ec6b - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:41:58,089 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:41:58,089 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:41:58,089 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:41:58,090 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:41:58,090 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:41:58,090 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@3c87521 - End of configuration.
+15:41:58,091 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5af97850 - Registering current configuration as safe fallback point
+15:41:58,091 |-INFO in org.example.MyConfigurator@5ef60048 - 自定义配置: logback-spring.xml 加载成功，
+15:41:58,094 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 262 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:42:00,494 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@40703b5 - Logback context being closed via shutdown hook
+15:42:00,494 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+15:43:08,990 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:43:08,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Here is a list of configurators discovered as a service, by rank: 
+15:43:08,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 -   org.example.MyConfigurator
+15:43:08,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:43:08,993 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - Constructed configurator of type class org.example.MyConfigurator
+15:43:09,166 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:43:09,186 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:43:09,186 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@631330c - File option not set. Defaulting to "status.txt"
+15:43:09,187 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:43:09,187 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:43:09,188 |-INFO in ch.qos.logback.core.util.ContextUtil@37d31475 - Registering shutdown hook with JVM runtime.
+15:43:09,193 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747208589190)
+15:43:09,195 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:43:09,196 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:43:09,205 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:43:09,206 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:43:09,216 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@44a3ec6b - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:43:09,256 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:43:09,257 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:43:09,257 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:43:09,257 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:43:09,257 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:43:09,258 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@3c87521 - End of configuration.
+15:43:09,259 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5af97850 - Registering current configuration as safe fallback point
+15:43:09,260 |-INFO in org.example.MyConfigurator@5ef60048 - 自定义配置: logback-spring.xml 加载成功，
+15:43:09,263 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6f195bc3 - org.example.MyConfigurator.configure() call lasted 267 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:43:09,270 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@c10f5b9 - Logback context being closed via shutdown hook
+15:43:09,270 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+15:45:53,433 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+15:45:53,439 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Here is a list of configurators discovered as a service, by rank: 
+15:45:53,439 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 -   org.example.MyConfigurator
+15:45:53,439 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+15:45:53,439 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Constructed configurator of type class org.example.MyConfigurator
+15:45:53,640 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+15:45:53,661 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+15:45:53,661 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@467aecef - File option not set. Defaulting to "status.txt"
+15:45:53,662 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:45:53,662 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+15:45:53,663 |-INFO in ch.qos.logback.core.util.ContextUtil@1a8a8f7c - Registering shutdown hook with JVM runtime.
+15:45:53,669 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747208753666)
+15:45:53,671 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+15:45:53,671 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+15:45:53,683 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+15:45:53,683 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+15:45:53,693 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@1f021e6c - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+15:45:53,732 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+15:45:53,732 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+15:45:53,732 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+15:45:53,733 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+15:45:53,734 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+15:45:53,735 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@20d3d15a - End of configuration.
+15:45:53,736 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@240237d2 - Registering current configuration as safe fallback point
+15:45:53,737 |-INFO in org.example.MyConfigurator@25a65b77 - 自定义配置: logback-spring.xml 加载成功，
+15:45:53,741 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - org.example.MyConfigurator.configure() call lasted 298 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+15:45:53,749 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@c10f5b9 - Logback context being closed via shutdown hook
+15:45:53,750 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+17:20:16,376 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+17:20:16,400 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Here is a list of configurators discovered as a service, by rank: 
+17:20:16,400 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 -   org.example.MyConfigurator
+17:20:16,400 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+17:20:16,400 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Constructed configurator of type class org.example.MyConfigurator
+17:20:16,589 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+17:20:16,616 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+17:20:16,616 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@467aecef - File option not set. Defaulting to "status.txt"
+17:20:16,618 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:20:16,618 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:20:16,619 |-INFO in ch.qos.logback.core.util.ContextUtil@1a8a8f7c - Registering shutdown hook with JVM runtime.
+17:20:16,619 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Using current interpretation time, i.e. now, as time reference.
+17:20:16,620 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Adding property to the context with key="bySecond" and value="20250514T172016" to the LOCAL scope
+17:20:16,625 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747214416623)
+17:20:16,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+17:20:16,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+17:20:16,638 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+17:20:16,639 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:20:16,648 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "log-20250514T172016.txt" substituted for "log-${bySecond}.txt"
+17:20:16,649 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:20:16,690 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [log-20250514T172016.txt]
+17:20:16,691 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+17:20:16,691 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:20:16,693 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+17:20:16,695 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+17:20:16,695 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+17:20:16,695 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+17:20:16,696 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+17:20:16,696 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+17:20:16,696 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+17:20:16,696 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1a84f40f - End of configuration.
+17:20:16,698 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5906ebcb - Registering current configuration as safe fallback point
+17:20:16,699 |-INFO in org.example.MyConfigurator@258e2e41 - 自定义配置: logback-spring.xml 加载成功，
+17:20:16,702 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - org.example.MyConfigurator.configure() call lasted 299 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+17:20:16,710 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@252708dd - Logback context being closed via shutdown hook
+17:20:16,710 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+17:20:43,979 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+17:20:43,983 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Here is a list of configurators discovered as a service, by rank: 
+17:20:43,984 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 -   org.example.MyConfigurator
+17:20:43,984 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+17:20:43,984 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Constructed configurator of type class org.example.MyConfigurator
+17:20:44,161 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+17:20:44,181 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+17:20:44,182 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@467aecef - File option not set. Defaulting to "status.txt"
+17:20:44,183 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:20:44,184 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:20:44,185 |-INFO in ch.qos.logback.core.util.ContextUtil@1a8a8f7c - Registering shutdown hook with JVM runtime.
+17:20:44,185 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Using current interpretation time, i.e. now, as time reference.
+17:20:44,185 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Adding property to the context with key="bySecond" and value="20250514" to the LOCAL scope
+17:20:44,191 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747214444188)
+17:20:44,194 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+17:20:44,194 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+17:20:44,205 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+17:20:44,205 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:20:44,217 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "log-20250514.txt" substituted for "log-${bySecond}.txt"
+17:20:44,218 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:20:44,265 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [log-20250514.txt]
+17:20:44,268 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+17:20:44,268 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:20:44,271 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+17:20:44,273 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+17:20:44,273 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+17:20:44,273 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+17:20:44,273 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+17:20:44,274 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+17:20:44,274 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+17:20:44,274 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1a84f40f - End of configuration.
+17:20:44,275 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5906ebcb - Registering current configuration as safe fallback point
+17:20:44,276 |-INFO in org.example.MyConfigurator@258e2e41 - 自定义配置: logback-spring.xml 加载成功，
+17:20:44,281 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - org.example.MyConfigurator.configure() call lasted 292 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+17:20:44,289 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@7c60d4cb - Logback context being closed via shutdown hook
+17:20:44,289 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]
+17:21:03,782 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.18
+17:21:03,785 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Here is a list of configurators discovered as a service, by rank: 
+17:21:03,785 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 -   org.example.MyConfigurator
+17:21:03,785 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+17:21:03,785 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - Constructed configurator of type class org.example.MyConfigurator
+17:21:03,952 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+17:21:03,970 |-INFO in ch.qos.logback.core.model.processor.StatusListenerModelHandler - Added status listener of type [ch.qos.logback.core.status.OnFileStatusListener]
+17:21:03,971 |-INFO in ch.qos.logback.core.status.OnFileStatusListener@467aecef - File option not set. Defaulting to "status.txt"
+17:21:03,972 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - Assuming className [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:21:03,972 |-INFO in ch.qos.logback.core.model.processor.ShutdownHookModelHandler - About to instantiate shutdown hook of type [ch.qos.logback.core.hook.DefaultShutdownHook]
+17:21:03,973 |-INFO in ch.qos.logback.core.util.ContextUtil@1a8a8f7c - Registering shutdown hook with JVM runtime.
+17:21:03,973 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Using current interpretation time, i.e. now, as time reference.
+17:21:03,974 |-INFO in ch.qos.logback.core.model.processor.TimestampModelHandler - Adding property to the context with key="bySecond" and value="2025-05-14" to the LOCAL scope
+17:21:03,978 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1747214463976)
+17:21:03,980 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/C:/working/%e4%ba%91code/code/java/idea/try/logback-test/test/target/classes/logback-spring.xml, fileWatchList={C:\working\云code\code\java\idea\try\logback-test\test\target\classes\logback-spring.xml}, urlWatchList=[})] 
+17:21:03,981 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 60 milliseconds
+17:21:03,990 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+17:21:03,991 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+17:21:04,000 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "log-2025-05-14.txt" substituted for "log-${bySecond}.txt"
+17:21:04,001 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+17:21:04,041 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [log-2025-05-14.txt]
+17:21:04,042 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+17:21:04,042 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+17:21:04,044 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@2fd66ad3 - value "==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n" substituted for "${console}"
+17:21:04,046 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - BEWARE: Writing to the console can be very slow. Avoid logging to the 
+17:21:04,046 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - console in production environments, especially in high volume systems.
+17:21:04,046 |-INFO in ch.qos.logback.core.ConsoleAppender[STDOUT] - See also https://logback.qos.ch/codes.html#slowConsole
+17:21:04,046 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+17:21:04,046 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to Logger[ROOT]
+17:21:04,047 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+17:21:04,047 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@1a84f40f - End of configuration.
+17:21:04,048 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@5906ebcb - Registering current configuration as safe fallback point
+17:21:04,048 |-INFO in org.example.MyConfigurator@258e2e41 - 自定义配置: logback-spring.xml 加载成功，
+17:21:04,051 |-INFO in ch.qos.logback.classic.util.ContextInitializer@7d70d1b1 - org.example.MyConfigurator.configure() call lasted 264 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+17:21:04,059 |-INFO in ch.qos.logback.core.hook.DefaultShutdownHook@252708dd - Logback context being closed via shutdown hook
+17:21:04,060 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Removing shutdownHook Thread[Logback shutdown hook [default],5,main]

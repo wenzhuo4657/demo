@@ -1,0 +1,30 @@
+<configuration scan="true" scanPeriod="60" debug="false">
+
+    <property name="console" value="==\n[%-5level] %red(%d{HH:mm}) Thread:[%thread]  Method:%green(%M) %cyan(%X{traceId})   classpath:%c \n%highlight(return):%m%n"></property>
+
+    <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" />
+    <statusListener class="ch.qos.logback.core.status.OnFileStatusListener" />
+
+    <shutdownHook/>
+
+    <root level="DEBUG">
+<appender-ref ref="FILE"></appender-ref>
+        <appender-ref ref="STDOUT"></appender-ref>
+    </root>
+
+
+    <timestamp key="bySecond" datePattern="yyyy-MM-dd"/>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>log-${bySecond}.txt</file>
+        <encoder>
+            <pattern>%logger{35} -%kvp- %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${console}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+</configuration>

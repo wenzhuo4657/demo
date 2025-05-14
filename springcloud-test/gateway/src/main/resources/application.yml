@@ -3,15 +3,22 @@ spring:
     name:  gateway
   cloud:
     nacos:
-      server-addr: 127.0.0.1:8848
+      server-addr: ${NACOS_SERVER_ADDR}
       discovery:
         group: my_discovery
-        server-addr: 127.0.0.1:8848
+        server-addr: ${NACOS_SERVER_ADDR}
     gateway:
+#      动态加载网关，从编码角度上实现
       routes:
-        - id: method_route
-          uri: lb://services-order
+#        - id: method_route
+#          uri: lb://services-order
+#          predicates:
+#            - Method=GET
+        - id: path_route
+          uri: http://localhost:8081
           predicates:
-            - Method=GET
+            - Path=/api/test/test/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /$\{segment}
 server:
   port: 80

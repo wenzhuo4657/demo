@@ -2,10 +2,12 @@ package org.wenzhuo4657.test.client.bean;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 @ConfigurationProperties(prefix = "order")
 @Component
+//@RefreshScope
 public class NacosConfigInfo {
 
     public   String  time;

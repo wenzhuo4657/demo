@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>logback-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>test</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>3.4.5</spring.boot.version>
+        <logback.version>1.5.18</logback.version>
+        <slf4j.version>2.0.16</slf4j.version>
+    </properties>
+
+
+    <dependencyManagement>
+
+        <dependencies>
+
+
+
+
+<!--            logback依赖锁定-->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-examples -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-examples</artifactId>
+                <version>1.2.13</version>
+            </dependency>
+
+<!--            日志门面版本依赖锁定-->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+
+
+
+            <!--        jakarta命名空间: 企业级应用的名称空间更改-->
+<!--            ps： 锁定了相同的依赖版本会依据顺序，依据较前的位置的版本，所以复杂的锁定一定要放在使用后面，-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+            </dependency>
+
+
+        </dependencies>
+
+
+    </dependencyManagement>
+
+</project>

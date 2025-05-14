@@ -8,6 +8,11 @@
     <file url="file://$PROJECT_DIR$/bootstrap-test/config-server-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bootstrap-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bootstrap-test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicGateway/gateway-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicGateway/gateway-services/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicGateway/services-1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamicGateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/services/services-client/src/main/java" charset="UTF-8" />

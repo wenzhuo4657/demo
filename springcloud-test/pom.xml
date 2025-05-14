@@ -12,6 +12,9 @@
         <module>model</module>
         <module>gateway</module>
         <module>bootstrap-test</module>
+        <module>dynamicGateway</module>
+        <module>dynamicGateway/gateway-common</module>
+        <module>dynamicGateway/gateway-services</module>
     </modules>
 
     <parent>
