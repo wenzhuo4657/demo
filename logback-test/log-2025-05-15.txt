@@ -1,0 +1,1 @@
+[INFO ]  16:28 Thread:[main]  Method:main     classpath:chapters.introduction.HelloWorld1  return: val1

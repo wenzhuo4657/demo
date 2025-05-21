@@ -1,2 +1,0 @@
-chapters.introduction.HelloWorld1 -- Hello world: val1
-chapters.introduction.HelloWorld1 -- Hello world: val1

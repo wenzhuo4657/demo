@@ -27,7 +27,11 @@
         <dependencies>
 
 
-
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-access</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
 
 <!--            logback依赖锁定-->
             <dependency>
