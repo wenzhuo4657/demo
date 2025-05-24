@@ -1,0 +1,158 @@
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:49 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:50 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: {"level":"INFO","message":"This is a test log message ","timestamp":1747889371389,"type":"app_log"}
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:58 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试
+[INFO ]  12:59 Thread:[main]  Method:main     classpath:org.example.HelloWorld1  return: 日志测试

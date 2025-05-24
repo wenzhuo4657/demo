@@ -50,10 +50,23 @@
 
 
 
+
+
 <!--    远程日志收集-->
     <appender name="LOGSTASH"  class="net.logstash.logback.appender.LogstashTcpSocketAppender">
         <destination>117.72.36.124:9999</destination>
         <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
+
+<!--            日志输出格式化，json的格式是为了便于logstash接收-->
+            <pattern>
+                {
+                "timestamp": "%d{yyyy-MM-dd HH:mm:ss.SSS}",
+                "level": "%level",
+                "thread": "%thread",
+                "logger": "%logger{36}",
+                "message": "%msg"
+                }
+            </pattern>
         </encoder>
     </appender>
 

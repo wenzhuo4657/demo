@@ -53,17 +53,11 @@ public class HelloWorld1 {
     public static void main(String[] args) throws InterruptedException {
 
 //        日志记录
-        LogMessage msg = new LogMessage();
-        msg.type = "app_log";
-        msg.level = "INFO";
-        msg.message = "This is a test log message " ;
-        msg.timestamp = System.currentTimeMillis();
-        String json = JSON.toJSON(msg).toString();
         Logger logger = LoggerFactory.getLogger(HelloWorld1.class);
 
 
         while (true){
-            logger.info(json);
+            logger.info("日志测试");
             Thread.sleep(1000);
 
         }
