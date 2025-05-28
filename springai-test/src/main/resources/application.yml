@@ -1,0 +1,21 @@
+spring:
+  ai:
+    zhipuai:
+      api-key:  6ff14501c4714dc1b971c42e037e5e07.liSxVnmZDFljvUhV
+      chat:
+        options:
+          model: GLM-4-FlashX-250414
+        api-key:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://117.72.36.124:3306/spring-ai?serverTimezone=Asia/Shanghai&userUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 465700
+
+
+
+
+
+
+
+
