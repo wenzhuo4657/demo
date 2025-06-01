@@ -25,7 +25,6 @@ import java.util.function.Function;
 @Configuration
 public class MyAdvisor {
 
-//    todo 搞懂提示词工程，hhhh，这些顾问什么的本质上还是提示词，只是添加了数据来源和以及和编码层面的结合，
 
     @Bean
     public  ChatMemory chatMemory(JdbcChatMemoryRepository jdbcChatMemoryRepository) {
@@ -69,12 +68,12 @@ public class MyAdvisor {
     @Bean
     public SimpleLoggerAdvisor loggerAdvisor(){
        return SimpleLoggerAdvisor.builder()
-//               todo 这里需要在精简消息，目前是随便写的
+               .order(Integer.MIN_VALUE)
                 .requestToString(new Function<ChatClientRequest, String>() {
                     @Override
                     public String apply(ChatClientRequest chatClientRequest) {
-                        Map<String, Object> context = chatClientRequest.context();
-                        return (String) context.get("comment");
+
+                        return  chatClientRequest.prompt().getContents();
                     }
                 })
                 .responseToString(new Function<ChatResponse, String>() {
@@ -92,7 +91,9 @@ public class MyAdvisor {
     @Bean
     public SafeGuardAdvisor safeGuardAdvisor(){
 
-        return SafeGuardAdvisor.builder()
+
+       return SafeGuardAdvisor.builder()
+                .order(Integer.MIN_VALUE)
                 .failureResponse("检测到违规词汇")
                  .sensitiveWords(List.of("色情", "暴恐"))
                 .build();
