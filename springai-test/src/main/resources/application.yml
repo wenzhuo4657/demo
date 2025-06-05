@@ -24,13 +24,13 @@ spring:
           model: embedding-3
     vectorstore:
       type: false
-      # 由于底层貌似不支持多数据源，为了避免和聊天缓存用的mysql冲突，自行配置org.example.config.MyVectorStore
+#       由于底层貌似不支持多数据源，为了避免和聊天缓存用的mysql冲突，自行配置org.example.config.MyVectorStore
 #      pgvector:
-#        dimensions:  1536
+#        dimensions:  2048
 #        index-type: hnsw
 #        distance-type: cosine_distance
+#        initialize-schema: true
   datasource:
-
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://117.72.36.124:3306/spring-ai?serverTimezone=Asia/Shanghai&userUnicode=true&useSSL=false&allowPublicKeyRetrieval=true
     username: root

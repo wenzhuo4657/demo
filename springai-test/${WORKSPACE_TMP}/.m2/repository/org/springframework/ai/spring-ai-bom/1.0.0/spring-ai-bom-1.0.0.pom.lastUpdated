@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat May 31 14:00:21 CST 2025
+@default-allow-http-http\://10.14.177.8\:8081/repository/maven-public/.lastUpdated=1748671221937
+http\://10.14.177.8\:8081/repository/maven-public/.error=Could not transfer artifact org.springframework.ai\:spring-ai-bom\:pom\:1.0.0 from/to allow-http (http\://10.14.177.8\:8081/repository/maven-public/)\: Connect to 10.14.177.8\:8081 [/10.14.177.8] failed\: Connect timed out

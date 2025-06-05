@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import javax.sql.DataSource;
 
 import static org.springframework.ai.vectorstore.pgvector.PgVectorStore.PgDistanceType.COSINE_DISTANCE;
-import static org.springframework.ai.vectorstore.pgvector.PgVectorStore.PgIndexType.HNSW;
+import static org.springframework.ai.vectorstore.pgvector.PgVectorStore.PgIndexType.NONE;
 
 @Configuration
 public class MyVectorStore {
@@ -23,7 +23,7 @@ public class MyVectorStore {
     @Bean
     public DataSource myDataSource(){
         DataSource root = DataSourceBuilder.create()
-                .url("jdbc:postgresql://117.72.36.124:5432/spring-ai")
+                .url("jdbc:postgresql://117.72.36.124:5432/spring-ai?currentSchema=public")
                 .username("postgres")
                 .password("postgres")
                 .build();
@@ -35,13 +35,14 @@ public class MyVectorStore {
     public VectorStore vectorStore(@Qualifier ("myDataSource") DataSource myDataSource, ZhiPuAiEmbeddingModel embeddingModel) {
          JdbcTemplate jdbcTemplate = new JdbcTemplate(myDataSource);
         return PgVectorStore.builder(jdbcTemplate, embeddingModel)
-                .dimensions(1536)                    // Optional: defaults to model dimensions or 1536
+                .dimensions(2048)                    // Optional: defaults to model dimensions or 1536
                 .distanceType(COSINE_DISTANCE)       // Optional: defaults to COSINE_DISTANCE
-                .indexType(HNSW)                     // Optional: defaults to HNSW
+                .indexType(NONE)                     // Optional: defaults to HNSW
                 .initializeSchema(true)              // Optional: defaults to false
                 .schemaName("public")                // Optional: defaults to "public"
                 .vectorTableName("vector_store")     // Optional: defaults to "vector_store"
                 .maxDocumentBatchSize(10000)         // Optional: defaults to 10000
+                .vectorTableValidationsEnabled(true)
                 .build();
     }
 }
