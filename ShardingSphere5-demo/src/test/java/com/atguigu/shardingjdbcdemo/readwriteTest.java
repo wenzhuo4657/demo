@@ -35,6 +35,7 @@ public class readwriteTest {
     public void testInsert(){
 
         User user = new User();
+        user.setId(10l);
         user.setUname("张三丰");
         userMapper.insert(user);
     }
@@ -44,6 +45,7 @@ public class readwriteTest {
     public void testInsertOrder(){
 
         Order order = new Order();
+        order.setId(10l);
         order.setOrderNo("ATGUIGU001");
         order.setUserId(1L);
         order.setAmount(new BigDecimal(100));
