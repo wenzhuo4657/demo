@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75a34fa2-420f-4dfd-9d01-21512bc43d2a" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/config/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/domain/stu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wenzhuo4657/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/wenzhuo4657/AppllicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/java/com/wenzhuo4657/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/java/com/wenzhuo4657/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/java/com/wenzhuo4657/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/java/com/wenzhuo4657/domain/stu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/java/com/wenzhuo4657/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/src/test/java/com/wenzhuo4657/AppllicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/target/classes/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbooy/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\working\software\apache-maven-3.9.9-bin\apache-maven-3.9.9" />
+        <option name="localRepository" value="C:\working\software\apache-maven-3.9.9-bin\maven-localRepository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="C:\working\software\apache-maven-3.9.9-bin\apache-maven-3.9.9\conf\settings - 副本.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2ylbPbKa9JbyEiblD9UGnZdvFyb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/working/云code/code/java/idea/try/springboot",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\working\云code\code\java\idea\try\springboot" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="75a34fa2-420f-4dfd-9d01-21512bc43d2a" name="更改" comment="" />
+      <created>1750412084861</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750412084861</updated>
+      <workItem from="1750412086020" duration="271000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
