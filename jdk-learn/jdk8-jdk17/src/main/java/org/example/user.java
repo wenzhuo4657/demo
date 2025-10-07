@@ -1,4 +1,4 @@
-package org.wenzhuo4657;
+package org.example;
 
 public interface user {
 

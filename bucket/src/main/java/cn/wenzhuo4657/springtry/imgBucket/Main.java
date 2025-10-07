@@ -13,13 +13,13 @@ import java.net.URI;
 
 public class Main {
 
-    private static String accessKeyId = "2bcbd2ccef26949f5d4b6ef1275eeca7";
-    private static String secretAccessKey = "147bfa6078f97d81b67b39649b311dcd8ded1fe9551cc5a82762bfe617d703e3";
+    private static String accessKeyId = "bbdca83781e8762046d3653340f651ac";
+    private static String secretAccessKey = "d56ef524754ee743037d0d2de91d7fef54d7830aa123baf43db9786628e3e4c4";
     private static String endpoint = "https://5a6bedf9483210bec5716c0eeb8dfd72.r2.cloudflarestorage.com";
-    private static String bucketName = "img";
+    private static String bucketName = "imageback";
 
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\14783\\Pictures\\EBBEC497ED07A822CB76D24D76738BA8.jpg");
+        File file = new File("C:\\Users\\25370\\Pictures\\个人使用\\95DB6D95CA0AD9209C2ED96C20E19F7C.jpg");
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
         // 创建S3客户端
         S3Client s3 = S3Client.builder()
@@ -27,6 +27,8 @@ public class Main {
                 .region(Region.US_EAST_1)
                 .credentialsProvider(StaticCredentialsProvider.create(AwsBasicCredentials.create(accessKeyId, secretAccessKey)))
                 .build();
+
+
 
         // 上传文件
         PutObjectRequest putObjectRequest = PutObjectRequest.builder()

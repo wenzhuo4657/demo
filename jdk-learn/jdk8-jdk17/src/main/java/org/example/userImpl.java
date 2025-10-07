@@ -1,6 +1,4 @@
-package org.wenzhuo4657;
-
-import org.wenzhuo4657.user;
+package org.example;
 
 public class userImpl implements user {
     @Override

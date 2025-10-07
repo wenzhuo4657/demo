@@ -6,11 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-test-04" />
-        <module name="springboot-test-03" />
-        <module name="springboot-test-02" />
-        <module name="springboot-test-01" />
+        <module name="test01-Servlet" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-test-01" target="1.8" />
+      <module name="springboot-test-02" target="1.8" />
+      <module name="springboot-test-03" target="1.8" />
+      <module name="springboot-test-04" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-test-01" options="-parameters" />
+      <module name="springboot-test-02" options="-parameters" />
+      <module name="springboot-test-03" options="-parameters" />
+      <module name="springboot-test-04" options="-parameters" />
+    </option>
   </component>
 </project>

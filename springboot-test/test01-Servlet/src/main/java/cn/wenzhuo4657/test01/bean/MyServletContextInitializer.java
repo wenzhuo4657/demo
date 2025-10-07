@@ -23,6 +23,9 @@ public class MyServletContextInitializer implements ServletContextInitializer {
 
         test.addMapping("/test");
         test.setLoadOnStartup(1);
+
+
+
         System.out.println("MyServletContextInitializer初始化成功！！");
 
     }
